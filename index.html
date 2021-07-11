@@ -16,211 +16,239 @@
   <body>
     <header id="header">
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-warning fixed-top"
-        style="max-width: 1400px; margin: auto"
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
         id="nav-bar"
       >
         <div class="container-fluid">
-          <a class="navbar-brand logo container nav-link d-block" href="#"
+          <a class="navbar-brand" href="https://ghostly.com/" target="_blank"
             ><img
+              src="https://f4.bcbits.com/img/0001099272_21.jpg"
+              alt=""
               id="header-img"
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-              alt="original trombones logo"
-            />
-          </a>
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#features"
-                >Features</a
-              >
-              <a class="nav-link" href="#how-it-works">How It Works</a>
-              <a class="nav-link" href="#pricing">Pricing</a>
-            </div>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#how">How it works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
     <main>
+      <br />
       <section>
-        <br />
-        <section id="hero">
-          <h2 class="super w-75">Handcrafted, home-made masterpieces</h2>
-          <br />
-          <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <div class="mb-3">
+            <label for="email" class="form-label"></label>
+              <br />
+              <h5 class="mn">
+                <b>
+                  Ghostly International is a music and art company supporting
+                  work of high quality, integrity, and individuality.
+                </b>
+              </h5></label
+            >
             <input
-              name="email"
               id="email"
               type="email"
-              placeholder="Enter your email address"
+              name="email"
+              class="form-control w-50"
+              aria-describedby="email"
+              placeholder="Enter your email here..."
               required=""
             />
-
-            <input
-              id="submit"
-              type="submit"
-              value="GET STARTED"
-              class="btn-warning btn fw-bold"
-            />
-          </form>
-        </section>
+          </div>
+       <input id="submit" type="submit" value="Get Started" class="btn bg-warning">
+        </form>
       </section>
       <section>
-        <div class="container">
-          <section id="features">
-            <div class="grid">
-              <div class="icon d-none d-md-block">
-                <h1>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="90"
-                    height="90"
-                    fill="currentColor"
-                    class="bi bi-award"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"
-                    />
-                    <path
-                      d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"
-                    />
-                  </svg>
-                </h1>
-              </div>
-              <div class="desc">
-                <h2>Premium Materials</h2>
-                <p class="tal">
-                  Our trombones use the shiniest brass which is sourced locally.
-                  This will increase the longevity of your purchase.
-                </p>
-              </div>
-            </div>
-            <div class="grid">
-              <div class="icon d-none d-md-block">
-                <h1>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="80"
-                    height="80"
-                    fill="currentColor"
-                    class="bi bi-truck"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
-                    />
-                  </svg>
-                </h1>
-              </div>
-              <div class="desc">
-                <h2>Fast Shipping</h2>
-                <p class="tal">
-                  We make sure you get your trombone as soon as we have finished
-                  making it. We also provide free returns if you are not
-                  satisfied.
-                </p>
-              </div>
-            </div>
-            <div class="grid">
-              <div class="icon d-none d-md-block">
-                <h1>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="70"
-                    height="70"
-                    fill="currentColor"
-                    class="bi bi-check-circle-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                    />
-                  </svg>
-                </h1>
-              </div>
-              <div class="desc">
-                <h2>Quality Assurance</h2>
-                <p class="tal">
-                  For every purchase you make, we will ensure there are no
-                  damages or faults and we will check and test the pitch of your
-                  instrument.
-                </p>
-              </div>
-            </div>
-          </section>
-          <hr class="bg-warning" />
-          <section id="how-it-works">
-            <iframe
-              id="video"
-              src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
-              allowfullscreen=""
-              height="315"
-              frameborder="0"
-            ></iframe>
-          </section>
-          <br />
-          <hr class="bg-warning" />
-          <section id="pricing">
-            <div class="product w-100" id="tenor">
-              <div class="level">Tenor Trombone</div>
-
-              <h2 class="tit">$600</h2>
-
-              <ol class="gig">
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum dolor.</li>
-                <li>Lorem ipsum.</li>
-              </ol>
-              <button class="btn">Select</button>
-            </div>
-            <div class="product w-100" id="bass">
-              <div class="level">Bass Trombone</div>
-              <h2 class="tit">$900</h2>
-              <ol class="gig">
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum dolor.</li>
-                <li>Lorem ipsum.</li>
-              </ol>
-              <button class="btn">Select</button>
-            </div>
-            <div class="product w-100" id="valve">
-              <div class="level">Valve Trombone</div>
-              <h2 class="tit">$1200</h2>
-              <ol class="gig">
-                <li>Plays similar to a Trumpet</li>
-                <li>Great for Jazz Bands</li>
-                <li>Lorem ipsum dolor.</li>
-                <li>Lorem ipsum.</li>
-              </ol>
-              <button class="btn">Select</button>
-            </div>
-          </section>
-          <footer class="bg-warning">
-            <ul>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <span>Copyright 2016, Original Trombones</span>
-            <span class="rl"> &copy; 2021 Riccardo Limiti</span>
-          </footer>
+        <div class="box" id="features">
+          <div class="icon-box">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              height="100"
+              fill="currentColor"
+              class="bi bi-speaker"
+              viewBox="0 0 16 16"
+              
+            >
+              <path 
+                d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"
+              />
+              <path 
+                d="M8 4.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5zM8 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-3.5 1.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"
+              />
+            </svg>
+          </div>
+          <div class="text-box">
+            For over 18 years, Spectral Sound, the dance music imprint of
+            Ghostly International, has thrived at the forefront of techno and
+            house. (Lorem Text)
+          </div>
+          <div class="icon-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              height="100"
+              fill="currentColor"
+              class="bi bi-soundwave"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z"
+              />
+            </svg>
+          </div>
+          <div class="text-box">
+            It has been a source of support for numerous DJs and producers
+            during that time, from Matthew Dear and Benoit & Sergio to Avalon
+            Emerson and Hieroglyphic Being. (Lorem Text)
+          </div>
+          <div class="icon-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              height="100"
+              fill="currentColor"
+              class="bi bi-vinyl"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"
+              />
+              <path d="M9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+            </svg>
+          </div>
+          <div class="text-box">
+            Now, Spectral brings the past alongside the present with its latest
+            release, a compilation that offers a vibrant cross-section of the
+            current moment in underground dance music. (Lorem Text)
+          </div>
         </div>
       </section>
+      <div class="d-flex justify-content-center" id="how">
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/gReXHfMHMm8"
+          title="YouTube video player"
+          frameborder=""
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <br />
+      <hr />
+      <section>
+        <div class="card-group p-3 d-flex justify-content-center" id="pricing">
+          <div class="cards">
+            <h5 class="card-title p-3"><b>Card title 1</b></h5>
+            <div class="card-body d-flex row justify-content-center">
+              <h2>$600</h2>
+              <hr />
+              <img
+                src="https://f4.bcbits.com/img/0013907254_10.jpg"
+                class="card-img"
+                alt="vinyl-1"
+              />
+              <hr />
+              <p class="card-text p-3">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. (Lorem text)
+              </p>
+              <div class="d-flex justify-content-center mt-3">
+                <a href="#" class="btn btn-warning"><b>Go somewhere</b></a>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <h5 class="card-title p-3"><b>Card title 2</b></h5>
+            <div class="card-body d-flex row justify-content-center">
+              <h2>$900</h2>
+              <hr />
+              <img
+                src="https://f4.bcbits.com/img/0013907253_10.jpg"
+                class="card-img"
+                alt="vinyl-2"
+              />
+              <hr />
+              <p class="card-text p-3">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. (Lorem text)
+              </p>
+              <div class="d-flex justify-content-center mt-3">
+                <a href="#" class="btn btn-warning"><b>Go somewhere</b></a>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <h5 class="card-title p-3"><b>Card title 3</b></h5>
+            <div class="card-body d-flex row justify-content-center">
+              <h2>$1200</h2>
+              <hr />
+              <img
+                src="https://f4.bcbits.com/img/0013907257_10.jpg"
+                class="card-img"
+                alt="vinyl-3"
+              />
+              <hr />
+              <p class="card-text p-3">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. (Lorem text)
+              </p>
+              <div class="d-flex justify-content-center mt-3">
+                <a href="#" class="btn btn-warning"><b>Go somewhere</b></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
     </main>
-
+    <footer>
+      <div class="container-fluid bg-light p-4">
+        <p class="pp">
+          All contents taken as example from:
+          <a href="https://ghostly.bandcamp.com/album/spectral-139"
+            >Bandcamp
+          </a>
+          &copy; &reg;
+        </p>
+        <p class="pp">
+          Thanks to:
+          <a href="https://ghostly.com/">Ghostly International </a> &copy; &reg;
+        </p>
+        <p class="pp">Riccardo Limiti 2021 &copy;</p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
