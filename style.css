@@ -17,6 +17,13 @@ nav {
   margin: auto;
   max-width: 1440px;
 }
+.nav-link {
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+.nav-link:hover {
+  background-color: orange;
+}
 #submit {
   font-weight: 700;
 }
@@ -92,6 +99,18 @@ path {
 h2 {
   text-align: center;
 }
+.pp > a {
+  text-decoration: none;
+  color: orange;
+  padding: 10px;
+  position: relative;
+  margin-top: -10px;
+}
+.pp > a:hover {
+  background-color: orange;
+  color: black;
+  border-radius: 5px;
+}
 @media (max-width: 576px) {
   .box {
     display: flex;
@@ -149,6 +168,44 @@ h2 {
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+.swing-in-bottom-fwd {
+  -webkit-animation: swing-in-bottom-fwd 0.5s
+    cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-bottom-fwd 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+@-webkit-keyframes swing-in-bottom-fwd {
+  0% {
+    -webkit-transform: rotateX(100deg);
+    transform: rotateX(100deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-bottom-fwd {
+  0% {
+    -webkit-transform: rotateX(100deg);
+    transform: rotateX(100deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
     opacity: 1;
   }
 }
